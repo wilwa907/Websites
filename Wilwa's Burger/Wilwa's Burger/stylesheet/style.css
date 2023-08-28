@@ -1,0 +1,655 @@
+/* Fonts */
+@font-face {
+    font-family: 'Pacifico';
+    src: url(fonts/Pacifico/Pacifico-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Play';
+    src: url(fonts/Play/Play-Regular.ttf);
+}
+
+/* General */
+html {
+    font-size: 105%;
+}
+
+body {
+    font: 1rem 'Play', Georgia, serif;
+    background: url("../images/burgers.jpeg") no-repeat fixed;
+    background-size: 100%;
+}
+
+h1, h2, h3 {
+    font-family: 'Pacifico', Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    align-items: center;
+    text-align: center;
+    border: 10px solid black;
+    border-radius: 20px;
+    width: 50%;
+    color: black;
+    margin: 20px auto 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    text-align: left;
+    text-transform: uppercase;
+}
+  
+h3 {
+    font-size: 2rem;
+}
+
+header p {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 20px 0;
+}
+
+main p {
+    margin-bottom: 20px;
+    text-align: left;
+    padding-left: 2rem;
+}
+
+.aboutUs {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.aboutUsImg {
+    width: 90%;
+}
+
+
+/* Background Color */
+#wrapper-index {
+    background-color: rgb(255, 178, 102, 0.85);
+    margin: 0 auto;
+    max-width: 64rem;
+    text-align: center;
+}
+
+#wrapper {
+    background-color: rgb(255, 178, 102, 0.85);
+    margin: 0 auto;
+    max-width: 64rem;
+    text-align: center;
+}
+
+
+/* Navigation */
+nav {
+    font-size: 1.4rem;
+    max-width: 64rem;
+    padding-top: 5px; 
+    padding-bottom: 5px; 
+    margin: 20px auto;
+    background-color: rgb(255, 255, 255, 0.75);
+}
+
+nav ul {
+    text-transform: uppercase;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+nav ul li a {
+    color:  orange;
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    color: black;
+    text-decoration: underline;
+}
+
+nav a:hover, nav a:focus {
+    color: #000;
+    font-weight: bold;
+    letter-spacing: 0.15rem;
+    outline: none;
+}
+
+
+/* Buttons */
+#clickableLabel {
+    display: inline-block;
+    padding: 25px 50px;
+    font-size: 30px;
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: #FEDC16;
+    color: black;
+    cursor: pointer;
+    margin: 40px 20px;
+}
+
+#clickableLabel:hover {
+    font-weight: bold;
+    outline: none;
+    border: 5px solid black;
+}
+
+#button1,
+#button2 {
+    color: black;
+    background-color: #FEDC16;
+    padding: 20px 40px;
+    font-size: 20px;
+    border: 3px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#button1:hover,
+#button2:hover {
+    font-weight: bold;
+    outline: none;
+    border: 5px solid black;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.button {
+    font-family: 'Play', Georgia, serif;
+    padding: 4px 10px;
+    font-size: .8rem;
+    background-color: #007bff;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+#messageBox {
+    margin-top: 2rem;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(255, 178, 102);
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    margin-top: 100px;
+    padding: 35px;
+    position: relative;
+}
+
+footer #companyLogo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#copyright,
+#contactInfo {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+#copyright {
+    padding-left: 1rem;
+}
+
+#contactInfo {
+    padding-right: 1rem;
+}
+
+#copyright ul {
+    list-style: none;
+}
+
+
+/* Table */
+table {
+    width: 80%;
+    max-width: 60rem;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    text-align: left;
+}
+
+th {
+    color: #212931;
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+table .right{
+    text-align: right;
+}
+
+tbody tr:nth-of-type(odd) {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+
+/* Form */
+form {
+    width: 35rem;
+    margin: 1rem auto 0;
+}
+
+input {
+    margin-right: 1.5rem;
+}
+
+.Drink,
+.Allergies,
+.Email,
+.Phone {
+    width: 8rem;
+    float: left;
+    text-align: right;
+    margin-right: 0.6rem;
+}
+
+.orderHeading {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
+
+.burger-options,
+.fries-options {
+  display: flex;
+  flex-direction: column;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; 
+  margin-left: 7rem; 
+}
+
+.orderButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+/* Menu */
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+}
+
+.burger,
+.fries,
+.drinks {
+    position: relative;
+    width: 90%;
+    margin: 0.2rem;
+}
+
+.burger:hover .overlay,
+.fries:hover .overlay,
+.drinks:hover .overlay {
+    opacity: 0.9;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: 100%;   
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%); 
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: black;
+}
+
+.text {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Special Burger on Menu */
+#specialBurger {
+    perspective: 1000px;
+}
+
+#flip-image {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 2s;
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#front-content {
+    background-color: white;
+    backface-visibility: hidden;
+}
+
+#back-content {
+    background-color: black;
+    color: white;
+    text-align: center;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+#headline {
+    position: absolute;
+    text-transform: uppercase;
+    width: 98%;
+    top: 5%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#ingredientsheadline {
+    position: absolute;
+    text-transform: uppercase;
+    width: 98%;
+    top: 60%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#burgerNameID {
+    position: absolute;
+    width: 98%;
+    top: 12%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    text-align: center;
+}
+
+#burgerdescriptionID {
+    position: absolute;
+    width: 98%;
+    top: 35%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    text-align: center;
+}
+
+#ingredientsdescriptionID {
+    position: absolute;
+    width: 98%;
+    top: 75%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    text-align: center;
+}
+
+#specialBurger:hover #flip-image {
+    transform: rotateY(180deg);
+}
+
+
+/* Thank You */
+picture>img {
+    max-width: 60rem;
+}
+
+
+/* Social Media */
+.socialMediaIcons {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+@media(max-width:750px) {
+    /* General */
+    body {
+        background-size: auto; 
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        padding: 5px;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+        margin-left: 1rem;
+    }
+
+    main p {
+        padding: 1rem;
+    }
+
+    /* Navigation */
+    nav {
+        line-height: 2rem;
+        padding-bottom: 1rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+    
+    nav ul li {
+        text-align: center;
+        padding: 0;
+    }
+
+    /* Footer */
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    footer #companyLogo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    #contactInfo {
+        margin-top: 100px;
+    }
+
+    /* Table */
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    tr {
+        padding-top: 0.5rem;
+    }
+
+    td {
+        position: relative;
+        padding-left: 50%;
+        font-size: 0.9rem;
+        padding-bottom: 0.5rem;
+    }
+
+    td:before {
+        position: absolute;
+        top: 1px;
+        left: 3px;
+
+        font-family: 'Play', Georgia, serif;
+        font-weight: bold;
+        letter-spacing: 0.075em;
+    }
+
+    table .right{
+        text-align: left;
+    }
+
+    td:nth-of-type(1):before {
+        content: "Country";
+    }
+
+    td:nth-of-type(2):before {
+        content: "CityAdress";
+    }
+
+    td:nth-of-type(3):before {
+        content: "Order";
+    }
+
+    td:nth-of-type(4):before {
+        content: "OpeningHours";
+    }
+
+    /* Form */
+    form {
+        width: 20rem;
+    }
+
+    .option {
+        margin-left: 1rem;
+    }
+
+    .Drink,
+    .Allergies,
+    .Email,
+    .Phone {
+        width: 4rem;
+    }
+
+    /* Menu */
+    .row {
+        flex-direction: column; 
+        justify-content: center;
+    }
+
+    .image,
+    .overlay,
+    .content {
+        width: 90%; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text {
+        font-size: 14px;
+    }
+
+    .burger,
+    .fries,
+    .drinks {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 5%;
+    }
+
+    #flip-image {
+        margin-top: 0.2rem;
+    }
+
+    #headline {
+        left: 50%;
+        font-size: 16px;
+    }
+
+    #ingredientsheadline {
+        top: 60%;
+        left: 50%;
+        font-size: 14px;
+    }
+
+    #burgerNameID {
+        top: 15%;
+        left: 50%;
+        font-size: 12px;
+    }
+
+    #burgerdescriptionID {
+        top: 35%;
+        left: 50%;
+        font-size: 10px;
+    }
+
+    #ingredientsdescriptionID {
+        top: 75%;
+        left: 50%;
+        font-size: 10px;
+    }
+
+    /* Thank You */
+    picture>img {
+        max-width: 90%;
+    }
+
+    /* Social Media */
+    .socialMediaIcons {
+        display: flex;
+        flex-direction: column;
+    }
+}
